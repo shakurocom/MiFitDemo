@@ -32,6 +32,11 @@
 		6BA5302C2863441F009D6E34 /* UIViewController+Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA5302B2863441F009D6E34 /* UIViewController+Child.swift */; };
 		6BA5302E28634768009D6E34 /* MiFitMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BA5302D28634768009D6E34 /* MiFitMapViewController.xib */; };
 		6BA5303428634BAC009D6E34 /* MiFitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BA5303328634BAC009D6E34 /* MiFitViewController.xib */; };
+		6BA5303528635824009D6E34 /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6BA5300428630237009D6E34 /* Raleway-Light.ttf */; };
+		6BA5303628635827009D6E34 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6BA5300328630237009D6E34 /* Raleway-Medium.ttf */; };
+		6BA5303728635829009D6E34 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6BA5300628630237009D6E34 /* Raleway-Regular.ttf */; };
+		6BA530382863582B009D6E34 /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6BA5300728630237009D6E34 /* Rubik-Bold.ttf */; };
+		6BA530392863582D009D6E34 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6BA5300528630237009D6E34 /* Rubik-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -295,13 +300,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BA530382863582B009D6E34 /* Rubik-Bold.ttf in Resources */,
+				6BA530392863582D009D6E34 /* Rubik-Regular.ttf in Resources */,
 				6BA52FF228630036009D6E34 /* LaunchScreen.storyboard in Resources */,
+				6BA5303528635824009D6E34 /* Raleway-Light.ttf in Resources */,
 				6BA5302E28634768009D6E34 /* MiFitMapViewController.xib in Resources */,
 				6BA52FEF28630036009D6E34 /* Assets.xcassets in Resources */,
 				6BA5300D28630293009D6E34 /* pause_play.json in Resources */,
 				6BA5300E28630293009D6E34 /* play_pause.json in Resources */,
 				6BA530002863021D009D6E34 /* MiFitActivityButton.xib in Resources */,
+				6BA5303728635829009D6E34 /* Raleway-Regular.ttf in Resources */,
 				6BA5300A2863026D009D6E34 /* MiFit.storyboard in Resources */,
+				6BA5303628635827009D6E34 /* Raleway-Medium.ttf in Resources */,
 				6BA52FFE28630210009D6E34 /* MiFit.xcassets in Resources */,
 				6BA5303428634BAC009D6E34 /* MiFitViewController.xib in Resources */,
 			);
