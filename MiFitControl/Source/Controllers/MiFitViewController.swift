@@ -8,7 +8,7 @@ class WeakTarget: NSObject {
     }
 }
 
-class MiFitViewController: UIViewController {
+public class MiFitViewController: UIViewController {
 
     struct Option {}
 
@@ -40,7 +40,7 @@ class MiFitViewController: UIViewController {
 
     private var displayLink: CADisplayLink?
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
 
         view.backgroundColor = UIColor.loadColorFromBundle(name: "mifitBackground100")
