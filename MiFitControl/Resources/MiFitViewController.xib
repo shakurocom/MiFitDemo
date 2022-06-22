@@ -87,6 +87,9 @@
                                                 <constraint firstAttribute="height" constant="144" id="0XG-XT-5Aq"/>
                                                 <constraint firstAttribute="width" constant="144" id="Aes-PL-bVi"/>
                                             </constraints>
+                                            <connections>
+                                                <action selector="toogleOpenButtonTapped" destination="-1" eventType="touchUpInside" id="sJL-Dm-AkM"/>
+                                            </connections>
                                         </view>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

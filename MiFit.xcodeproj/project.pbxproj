@@ -153,6 +153,8 @@
 				6BA5300B28630293009D6E34 /* pause_play.json */,
 				6BA5300C28630293009D6E34 /* play_pause.json */,
 				6BA52FFD28630210009D6E34 /* MiFit.xcassets */,
+				6BA5302D28634768009D6E34 /* MiFitMapViewController.xib */,
+				6BA5303328634BAC009D6E34 /* MiFitViewController.xib */,
 				6BA5302F2863477A009D6E34 /* Controls */,
 				6BA530082863023B009D6E34 /* MiFitFonts */,
 			);
@@ -184,9 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				6BA53012286302C9009D6E34 /* MiFitMapViewController.swift */,
-				6BA5302D28634768009D6E34 /* MiFitMapViewController.xib */,
 				6BA53010286302C9009D6E34 /* MiFitViewController.swift */,
-				6BA5303328634BAC009D6E34 /* MiFitViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
