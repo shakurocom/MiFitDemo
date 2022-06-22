@@ -23,16 +23,19 @@ class MiFitViewController: UIViewController {
     @IBOutlet private var middleViewTop: NSLayoutConstraint!
 
     private lazy var routingMap: MiFitMapViewController? = {
-        let options = MiFitMapViewController.Option(
-            screenTopOffset: Constants.topScreenTopOffset,
-            animationDuration: Constants.animationDuration,
-            prefferedScreenHeight: Constants.prefferedScreenHeight)
-
-        if let viewController = router?.viewController(type: MiFitMapViewController.self, options: options) as? MiFitMapViewController {
-            addChildViewController(viewController, notifyAboutAppearanceTransition: false, targetContainerView: containerView.clippingView)
-            return viewController
+        let controllerBundle: Bundle
+        if let bundleURL = Bundle(for: MiFitViewController.self).url(forResource: "MiFit", withExtension: "bundle"),
+           let bundle = Bundle(url: bundleURL) {
+            controllerBundle = bundle
+        } else {
+            controllerBundle = Bundle.main
         }
-        return nil
+        let viewController = MiFitMapViewController(nibName: "MiFitMapViewController", bundle: controllerBundle)
+        viewController.screenTopOffset = Constants.topScreenTopOffset
+        viewController.animationDuration = Constants.animationDuration
+        viewController.prefferedScreenHeight = Constants.prefferedScreenHeight
+        addChildViewController(viewController, notifyAboutAppearanceTransition: false, targetContainerView: containerView.clippingView)
+        return viewController
     }()
 
     private var displayLink: CADisplayLink?
@@ -90,15 +93,5 @@ private extension MiFitViewController {
         let valueFunction = CAValueFunction(name: .translateY)
 
         return CALayer.keyFrameAnimation(for: #keyPath(CALayer.transform), values: values, duration: Constants.animationDuration, valueFunction: valueFunction)
-    }
-}
-
-// MARK: - BaseViewControllerProtocol
-
-extension MiFitViewController: BaseViewControllerProtocol {
-    static func instantiateViewController(_ coordinator: AppCoordinator, options: Option) -> UIViewController {
-        let viewController = R.unwrap({ R.storyboard.miFit.miFitViewController() })
-        viewController.router = coordinator
-        return viewController
     }
 }
