@@ -7,23 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		020EF05700BB7882632638C5 /* Pods_MiFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F9434B4E3C3972724FBB431 /* Pods_MiFit.framework */; };
 		6BA52FE628630035009D6E34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA52FE528630035009D6E34 /* AppDelegate.swift */; };
 		6BA52FE828630035009D6E34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA52FE728630035009D6E34 /* SceneDelegate.swift */; };
-		6BA52FEA28630035009D6E34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA52FE928630035009D6E34 /* ViewController.swift */; };
-		6BA52FED28630035009D6E34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BA52FEB28630035009D6E34 /* Main.storyboard */; };
 		6BA52FEF28630036009D6E34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BA52FEE28630036009D6E34 /* Assets.xcassets */; };
 		6BA52FF228630036009D6E34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BA52FF028630036009D6E34 /* LaunchScreen.storyboard */; };
+		6BA52FFE28630210009D6E34 /* MiFit.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BA52FFD28630210009D6E34 /* MiFit.xcassets */; };
+		6BA530002863021D009D6E34 /* MiFitActivityButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BA52FFF2863021D009D6E34 /* MiFitActivityButton.xib */; };
+		6BA5300A2863026D009D6E34 /* MiFit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BA530092863026D009D6E34 /* MiFit.storyboard */; };
+		6BA5300D28630293009D6E34 /* pause_play.json in Resources */ = {isa = PBXBuildFile; fileRef = 6BA5300B28630293009D6E34 /* pause_play.json */; };
+		6BA5300E28630293009D6E34 /* play_pause.json in Resources */ = {isa = PBXBuildFile; fileRef = 6BA5300C28630293009D6E34 /* play_pause.json */; };
+		6BA53019286302C9009D6E34 /* MiFitStylesheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA5300F286302C9009D6E34 /* MiFitStylesheet.swift */; };
+		6BA5301A286302C9009D6E34 /* MiFitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA53010286302C9009D6E34 /* MiFitViewController.swift */; };
+		6BA5301B286302C9009D6E34 /* CGRect+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA53011286302C9009D6E34 /* CGRect+Helpers.swift */; };
+		6BA5301C286302C9009D6E34 /* MiFitMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA53012286302C9009D6E34 /* MiFitMapViewController.swift */; };
+		6BA5301D286302C9009D6E34 /* MiFitContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA53013286302C9009D6E34 /* MiFitContainerView.swift */; };
+		6BA5301E286302C9009D6E34 /* MiFitPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA53014286302C9009D6E34 /* MiFitPinView.swift */; };
+		6BA5301F286302C9009D6E34 /* MiFitActivityButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA53015286302C9009D6E34 /* MiFitActivityButton.swift */; };
+		6BA53020286302C9009D6E34 /* CALayer+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA53016286302C9009D6E34 /* CALayer+Helpers.swift */; };
+		6BA53021286302C9009D6E34 /* MiFitActivityContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA53017286302C9009D6E34 /* MiFitActivityContainer.swift */; };
+		6BA53022286302C9009D6E34 /* MiFitToogleOpenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA53018286302C9009D6E34 /* MiFitToogleOpenButton.swift */; };
+		6BA5302928630598009D6E34 /* UIImage+Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA5302728630598009D6E34 /* UIImage+Bundle.swift */; };
+		6BA5302A28630598009D6E34 /* UIColor+Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA5302828630598009D6E34 /* UIColor+Bundle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F9434B4E3C3972724FBB431 /* Pods_MiFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiFit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BA52FE228630035009D6E34 /* MiFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BA52FE528630035009D6E34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BA52FE728630035009D6E34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6BA52FE928630035009D6E34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6BA52FEC28630035009D6E34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6BA52FEE28630036009D6E34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BA52FF128630036009D6E34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6BA52FF328630036009D6E34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BA52FFD28630210009D6E34 /* MiFit.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MiFit.xcassets; sourceTree = "<group>"; };
+		6BA52FFF2863021D009D6E34 /* MiFitActivityButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MiFitActivityButton.xib; sourceTree = "<group>"; };
+		6BA5300328630237009D6E34 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.ttf"; sourceTree = "<group>"; };
+		6BA5300428630237009D6E34 /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
+		6BA5300528630237009D6E34 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
+		6BA5300628630237009D6E34 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		6BA5300728630237009D6E34 /* Rubik-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Bold.ttf"; sourceTree = "<group>"; };
+		6BA530092863026D009D6E34 /* MiFit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MiFit.storyboard; sourceTree = "<group>"; };
+		6BA5300B28630293009D6E34 /* pause_play.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pause_play.json; sourceTree = "<group>"; };
+		6BA5300C28630293009D6E34 /* play_pause.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = play_pause.json; sourceTree = "<group>"; };
+		6BA5300F286302C9009D6E34 /* MiFitStylesheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiFitStylesheet.swift; sourceTree = "<group>"; };
+		6BA53010286302C9009D6E34 /* MiFitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiFitViewController.swift; sourceTree = "<group>"; };
+		6BA53011286302C9009D6E34 /* CGRect+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Helpers.swift"; sourceTree = "<group>"; };
+		6BA53012286302C9009D6E34 /* MiFitMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiFitMapViewController.swift; sourceTree = "<group>"; };
+		6BA53013286302C9009D6E34 /* MiFitContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiFitContainerView.swift; sourceTree = "<group>"; };
+		6BA53014286302C9009D6E34 /* MiFitPinView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiFitPinView.swift; sourceTree = "<group>"; };
+		6BA53015286302C9009D6E34 /* MiFitActivityButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiFitActivityButton.swift; sourceTree = "<group>"; };
+		6BA53016286302C9009D6E34 /* CALayer+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+Helpers.swift"; sourceTree = "<group>"; };
+		6BA53017286302C9009D6E34 /* MiFitActivityContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiFitActivityContainer.swift; sourceTree = "<group>"; };
+		6BA53018286302C9009D6E34 /* MiFitToogleOpenButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiFitToogleOpenButton.swift; sourceTree = "<group>"; };
+		6BA5302728630598009D6E34 /* UIImage+Bundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Bundle.swift"; sourceTree = "<group>"; };
+		6BA5302828630598009D6E34 /* UIColor+Bundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Bundle.swift"; sourceTree = "<group>"; };
+		88B5690DF7DA67B11035A2EA /* Pods-MiFit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiFit.release.xcconfig"; path = "Target Support Files/Pods-MiFit/Pods-MiFit.release.xcconfig"; sourceTree = "<group>"; };
+		FD31E27EC045B446B082F2D0 /* Pods-MiFit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiFit.debug.xcconfig"; path = "Target Support Files/Pods-MiFit/Pods-MiFit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				020EF05700BB7882632638C5 /* Pods_MiFit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +80,11 @@
 		6BA52FD928630035009D6E34 = {
 			isa = PBXGroup;
 			children = (
-				6BA52FE428630035009D6E34 /* MiFit */,
+				6BA52FE428630035009D6E34 /* MiFitDemo */,
+				6BA52FF9286300A4009D6E34 /* MiFitControl */,
 				6BA52FE328630035009D6E34 /* Products */,
+				E3D1AFBCEE04B5EAC004EEA3 /* Pods */,
+				74ED2D18552BBFD1E8CF97A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,18 +96,126 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6BA52FE428630035009D6E34 /* MiFit */ = {
+		6BA52FE428630035009D6E34 /* MiFitDemo */ = {
 			isa = PBXGroup;
 			children = (
 				6BA52FE528630035009D6E34 /* AppDelegate.swift */,
 				6BA52FE728630035009D6E34 /* SceneDelegate.swift */,
-				6BA52FE928630035009D6E34 /* ViewController.swift */,
-				6BA52FEB28630035009D6E34 /* Main.storyboard */,
-				6BA52FEE28630036009D6E34 /* Assets.xcassets */,
-				6BA52FF028630036009D6E34 /* LaunchScreen.storyboard */,
-				6BA52FF328630036009D6E34 /* Info.plist */,
+				6BA52FFA286300C4009D6E34 /* Resources */,
 			);
-			path = MiFit;
+			path = MiFitDemo;
+			sourceTree = "<group>";
+		};
+		6BA52FF9286300A4009D6E34 /* MiFitControl */ = {
+			isa = PBXGroup;
+			children = (
+				6BA52FFC28630199009D6E34 /* Resources */,
+				6BA52FFB2863018C009D6E34 /* Source */,
+			);
+			path = MiFitControl;
+			sourceTree = "<group>";
+		};
+		6BA52FFA286300C4009D6E34 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6BA52FF328630036009D6E34 /* Info.plist */,
+				6BA52FEE28630036009D6E34 /* Assets.xcassets */,
+				6BA5302328630300009D6E34 /* UI */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6BA52FFB2863018C009D6E34 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				6BA5300F286302C9009D6E34 /* MiFitStylesheet.swift */,
+				6BA530242863038B009D6E34 /* Controllers */,
+				6BA530262863044B009D6E34 /* Controls */,
+				6BA53025286303F2009D6E34 /* Extensions */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		6BA52FFC28630199009D6E34 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6BA5300B28630293009D6E34 /* pause_play.json */,
+				6BA5300C28630293009D6E34 /* play_pause.json */,
+				6BA52FFD28630210009D6E34 /* MiFit.xcassets */,
+				6BA52FFF2863021D009D6E34 /* MiFitActivityButton.xib */,
+				6BA530082863023B009D6E34 /* MiFitFonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6BA530082863023B009D6E34 /* MiFitFonts */ = {
+			isa = PBXGroup;
+			children = (
+				6BA5300428630237009D6E34 /* Raleway-Light.ttf */,
+				6BA5300328630237009D6E34 /* Raleway-Medium.ttf */,
+				6BA5300628630237009D6E34 /* Raleway-Regular.ttf */,
+				6BA5300728630237009D6E34 /* Rubik-Bold.ttf */,
+				6BA5300528630237009D6E34 /* Rubik-Regular.ttf */,
+			);
+			path = MiFitFonts;
+			sourceTree = "<group>";
+		};
+		6BA5302328630300009D6E34 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6BA530092863026D009D6E34 /* MiFit.storyboard */,
+				6BA52FF028630036009D6E34 /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6BA530242863038B009D6E34 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6BA53012286302C9009D6E34 /* MiFitMapViewController.swift */,
+				6BA53010286302C9009D6E34 /* MiFitViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6BA53025286303F2009D6E34 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6BA53016286302C9009D6E34 /* CALayer+Helpers.swift */,
+				6BA53011286302C9009D6E34 /* CGRect+Helpers.swift */,
+				6BA5302828630598009D6E34 /* UIColor+Bundle.swift */,
+				6BA5302728630598009D6E34 /* UIImage+Bundle.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6BA530262863044B009D6E34 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				6BA53015286302C9009D6E34 /* MiFitActivityButton.swift */,
+				6BA53017286302C9009D6E34 /* MiFitActivityContainer.swift */,
+				6BA53013286302C9009D6E34 /* MiFitContainerView.swift */,
+				6BA53014286302C9009D6E34 /* MiFitPinView.swift */,
+				6BA53018286302C9009D6E34 /* MiFitToogleOpenButton.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		74ED2D18552BBFD1E8CF97A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F9434B4E3C3972724FBB431 /* Pods_MiFit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3D1AFBCEE04B5EAC004EEA3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD31E27EC045B446B082F2D0 /* Pods-MiFit.debug.xcconfig */,
+				88B5690DF7DA67B11035A2EA /* Pods-MiFit.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +225,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6BA52FF628630036009D6E34 /* Build configuration list for PBXNativeTarget "MiFit" */;
 			buildPhases = (
+				6D0766F96382EB3AC01F7C2B /* [CP] Check Pods Manifest.lock */,
 				6BA52FDE28630035009D6E34 /* Sources */,
 				6BA52FDF28630035009D6E34 /* Frameworks */,
 				6BA52FE028630035009D6E34 /* Resources */,
+				D55D0E36123ACEB098DFADE5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,34 +280,83 @@
 			files = (
 				6BA52FF228630036009D6E34 /* LaunchScreen.storyboard in Resources */,
 				6BA52FEF28630036009D6E34 /* Assets.xcassets in Resources */,
-				6BA52FED28630035009D6E34 /* Main.storyboard in Resources */,
+				6BA5300D28630293009D6E34 /* pause_play.json in Resources */,
+				6BA5300E28630293009D6E34 /* play_pause.json in Resources */,
+				6BA530002863021D009D6E34 /* MiFitActivityButton.xib in Resources */,
+				6BA5300A2863026D009D6E34 /* MiFit.storyboard in Resources */,
+				6BA52FFE28630210009D6E34 /* MiFit.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D0766F96382EB3AC01F7C2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MiFit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D55D0E36123ACEB098DFADE5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MiFit/Pods-MiFit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MiFit/Pods-MiFit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MiFit/Pods-MiFit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6BA52FDE28630035009D6E34 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BA52FEA28630035009D6E34 /* ViewController.swift in Sources */,
+				6BA5301E286302C9009D6E34 /* MiFitPinView.swift in Sources */,
+				6BA5302A28630598009D6E34 /* UIColor+Bundle.swift in Sources */,
+				6BA5301B286302C9009D6E34 /* CGRect+Helpers.swift in Sources */,
+				6BA53021286302C9009D6E34 /* MiFitActivityContainer.swift in Sources */,
+				6BA5301F286302C9009D6E34 /* MiFitActivityButton.swift in Sources */,
+				6BA5301A286302C9009D6E34 /* MiFitViewController.swift in Sources */,
+				6BA5301D286302C9009D6E34 /* MiFitContainerView.swift in Sources */,
 				6BA52FE628630035009D6E34 /* AppDelegate.swift in Sources */,
+				6BA53019286302C9009D6E34 /* MiFitStylesheet.swift in Sources */,
+				6BA53020286302C9009D6E34 /* CALayer+Helpers.swift in Sources */,
+				6BA5302928630598009D6E34 /* UIImage+Bundle.swift in Sources */,
 				6BA52FE828630035009D6E34 /* SceneDelegate.swift in Sources */,
+				6BA5301C286302C9009D6E34 /* MiFitMapViewController.swift in Sources */,
+				6BA53022286302C9009D6E34 /* MiFitToogleOpenButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6BA52FEB28630035009D6E34 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6BA52FEC28630035009D6E34 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6BA52FF028630036009D6E34 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +484,7 @@
 		};
 		6BA52FF728630036009D6E34 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD31E27EC045B446B082F2D0 /* Pods-MiFit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -289,12 +492,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MW2UF479VW;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MiFit/Info.plist;
+				INFOPLIST_FILE = MiFitDemo/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +515,7 @@
 		};
 		6BA52FF828630036009D6E34 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88B5690DF7DA67B11035A2EA /* Pods-MiFit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -317,12 +523,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MW2UF479VW;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MiFit/Info.plist;
+				INFOPLIST_FILE = MiFitDemo/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
