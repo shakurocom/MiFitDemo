@@ -26,7 +26,14 @@ class MiFitActivityContainer: UIView {
         titleLabel.font = MiFitStylesheet.FontFace.ralewayMedium.fontWithSize(16.0)
 
         ActivityList.generate().items.forEach { activity in
-            if let subView = R.nib.miFitActivityButton(owner: nil) {
+            let buttonBundle: Bundle
+            if let bundleURL = Bundle(for: MiFitActivityButton.self).url(forResource: "MiFit", withExtension: "bundle"),
+               let bundle = Bundle(url: bundleURL) {
+                buttonBundle = bundle
+            } else {
+                buttonBundle = Bundle.main
+            }
+            if let subView = buttonBundle.loadNibNamed("MiFitActivityButton", owner: nil)?[0] as? MiFitActivityButton {
                 let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
                 subView.addGestureRecognizer(tap)
                 subView.activity = activity

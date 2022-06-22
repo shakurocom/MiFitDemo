@@ -6,11 +6,9 @@ protocol RoutingMapProtocol {
 
 class MiFitMapViewController: UIViewController {
 
-    struct Option {
-        let screenTopOffset: CGFloat
-        let animationDuration: TimeInterval
-        let prefferedScreenHeight: CGFloat
-    }
+    var screenTopOffset: CGFloat = 0.0
+    var animationDuration: TimeInterval = 0.0
+    var prefferedScreenHeight: CGFloat = 0.0
 
     private enum Constants {
         static let routingMapPinFrame: CGRect = CGRect(x: 215.0, y: 236.0, width: 32.0, height: 32.0)
@@ -50,9 +48,6 @@ class MiFitMapViewController: UIViewController {
 
     private var routingMapPinView: MiFitPinView?
     private var expanded: Bool = false
-    private var screenTopOffset: CGFloat = 0.0
-    private var animationDuration: TimeInterval = 0.0
-    private var prefferedScreenHeight: CGFloat = 0.0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -212,20 +207,5 @@ extension MiFitMapViewController: RoutingMapProtocol {
 
         runFadeAnimation(animated: animated)
         runPosAnimation(animated: animated)
-    }
-}
-
-// MARK: - BaseViewControllerProtocol
-
-extension MiFitMapViewController: BaseViewControllerProtocol {
-    static func instantiateViewController(_ coordinator: AppCoordinator, options: Option) -> UIViewController {
-        let viewController = R.unwrap({ R.storyboard.miFit.miFitMapViewController() })
-
-        viewController.animationDuration = options.animationDuration
-        viewController.screenTopOffset = options.screenTopOffset
-        viewController.prefferedScreenHeight = options.prefferedScreenHeight
-        viewController.router = coordinator
-
-        return viewController
     }
 }

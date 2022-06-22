@@ -29,6 +29,9 @@
 		6BA53022286302C9009D6E34 /* MiFitToogleOpenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA53018286302C9009D6E34 /* MiFitToogleOpenButton.swift */; };
 		6BA5302928630598009D6E34 /* UIImage+Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA5302728630598009D6E34 /* UIImage+Bundle.swift */; };
 		6BA5302A28630598009D6E34 /* UIColor+Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA5302828630598009D6E34 /* UIColor+Bundle.swift */; };
+		6BA5302C2863441F009D6E34 /* UIViewController+Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA5302B2863441F009D6E34 /* UIViewController+Child.swift */; };
+		6BA5302E28634768009D6E34 /* MiFitMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BA5302D28634768009D6E34 /* MiFitMapViewController.xib */; };
+		6BA5303428634BAC009D6E34 /* MiFitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BA5303328634BAC009D6E34 /* MiFitViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +64,9 @@
 		6BA53018286302C9009D6E34 /* MiFitToogleOpenButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiFitToogleOpenButton.swift; sourceTree = "<group>"; };
 		6BA5302728630598009D6E34 /* UIImage+Bundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Bundle.swift"; sourceTree = "<group>"; };
 		6BA5302828630598009D6E34 /* UIColor+Bundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Bundle.swift"; sourceTree = "<group>"; };
+		6BA5302B2863441F009D6E34 /* UIViewController+Child.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Child.swift"; sourceTree = "<group>"; };
+		6BA5302D28634768009D6E34 /* MiFitMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MiFitMapViewController.xib; sourceTree = "<group>"; };
+		6BA5303328634BAC009D6E34 /* MiFitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MiFitViewController.xib; sourceTree = "<group>"; };
 		88B5690DF7DA67B11035A2EA /* Pods-MiFit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiFit.release.xcconfig"; path = "Target Support Files/Pods-MiFit/Pods-MiFit.release.xcconfig"; sourceTree = "<group>"; };
 		FD31E27EC045B446B082F2D0 /* Pods-MiFit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiFit.debug.xcconfig"; path = "Target Support Files/Pods-MiFit/Pods-MiFit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,7 +148,7 @@
 				6BA5300B28630293009D6E34 /* pause_play.json */,
 				6BA5300C28630293009D6E34 /* play_pause.json */,
 				6BA52FFD28630210009D6E34 /* MiFit.xcassets */,
-				6BA52FFF2863021D009D6E34 /* MiFitActivityButton.xib */,
+				6BA5302F2863477A009D6E34 /* Controls */,
 				6BA530082863023B009D6E34 /* MiFitFonts */,
 			);
 			path = Resources;
@@ -173,7 +179,9 @@
 			isa = PBXGroup;
 			children = (
 				6BA53012286302C9009D6E34 /* MiFitMapViewController.swift */,
+				6BA5302D28634768009D6E34 /* MiFitMapViewController.xib */,
 				6BA53010286302C9009D6E34 /* MiFitViewController.swift */,
+				6BA5303328634BAC009D6E34 /* MiFitViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -185,6 +193,7 @@
 				6BA53011286302C9009D6E34 /* CGRect+Helpers.swift */,
 				6BA5302828630598009D6E34 /* UIColor+Bundle.swift */,
 				6BA5302728630598009D6E34 /* UIImage+Bundle.swift */,
+				6BA5302B2863441F009D6E34 /* UIViewController+Child.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -197,6 +206,14 @@
 				6BA53013286302C9009D6E34 /* MiFitContainerView.swift */,
 				6BA53014286302C9009D6E34 /* MiFitPinView.swift */,
 				6BA53018286302C9009D6E34 /* MiFitToogleOpenButton.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		6BA5302F2863477A009D6E34 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				6BA52FFF2863021D009D6E34 /* MiFitActivityButton.xib */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -279,12 +296,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BA52FF228630036009D6E34 /* LaunchScreen.storyboard in Resources */,
+				6BA5302E28634768009D6E34 /* MiFitMapViewController.xib in Resources */,
 				6BA52FEF28630036009D6E34 /* Assets.xcassets in Resources */,
 				6BA5300D28630293009D6E34 /* pause_play.json in Resources */,
 				6BA5300E28630293009D6E34 /* play_pause.json in Resources */,
 				6BA530002863021D009D6E34 /* MiFitActivityButton.xib in Resources */,
 				6BA5300A2863026D009D6E34 /* MiFit.storyboard in Resources */,
 				6BA52FFE28630210009D6E34 /* MiFit.xcassets in Resources */,
+				6BA5303428634BAC009D6E34 /* MiFitViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +361,7 @@
 				6BA5301B286302C9009D6E34 /* CGRect+Helpers.swift in Sources */,
 				6BA53021286302C9009D6E34 /* MiFitActivityContainer.swift in Sources */,
 				6BA5301F286302C9009D6E34 /* MiFitActivityButton.swift in Sources */,
+				6BA5302C2863441F009D6E34 /* UIViewController+Child.swift in Sources */,
 				6BA5301A286302C9009D6E34 /* MiFitViewController.swift in Sources */,
 				6BA5301D286302C9009D6E34 /* MiFitContainerView.swift in Sources */,
 				6BA52FE628630035009D6E34 /* AppDelegate.swift in Sources */,
@@ -495,7 +515,7 @@
 				INFOPLIST_FILE = MiFitDemo/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = MiFit;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -526,7 +546,7 @@
 				INFOPLIST_FILE = MiFitDemo/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = MiFit;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

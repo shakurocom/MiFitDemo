@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MiFitMapViewController" customModule="MiFit" customModuleProvider="target">
+            <connections>
+                <outlet property="distanceLabel" destination="bPK-H0-deV" id="4fT-Gw-Pzf"/>
+                <outlet property="distanceUnitLabel" destination="oGN-7T-yK2" id="Qmq-CG-p0L"/>
+                <outlet property="gradientView" destination="dVU-vC-HqQ" id="NyT-Ad-0k1"/>
+                <outlet property="imageView" destination="iGS-Wa-mEq" id="aSf-QN-B5l"/>
+                <outlet property="mapViewTopConstraint" destination="UGL-D8-Qyl" id="aRC-sG-Jtk"/>
+                <outlet property="routingMapView" destination="xx0-nF-ofj" id="FLc-J6-rUd"/>
+                <outlet property="speedLabel" destination="K0d-jq-3g1" id="kTE-oK-das"/>
+                <outlet property="speedStackView" destination="aUR-vI-K7J" id="H5o-4O-Pt6"/>
+                <outlet property="speedUnitLabel" destination="Uev-uT-wGb" id="oDh-FF-c6u"/>
+                <outlet property="timeLabel" destination="GBZ-7h-ZGa" id="qEr-1V-Jsb"/>
+                <outlet property="timeStackView" destination="kAD-Dx-WsQ" id="MVu-ek-szm"/>
+                <outlet property="view" destination="zCB-NY-XPS" id="aQn-zr-46v"/>
+                <outlet property="walkDistanceLabel" destination="A9N-QR-029" id="GT7-ie-Zmg"/>
+                <outlet property="walkStackView" destination="aFC-Fm-m6a" id="ZAq-6z-MeJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view userInteractionEnabled="NO" contentMode="scaleToFill" id="zCB-NY-XPS">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xx0-nF-ofj" userLabel="Routing Map View">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="523"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="iGS-Wa-mEq" userLabel="Image View">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="523"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dVU-vC-HqQ" userLabel="Gradient View">
+                            <rect key="frame" x="0.0" y="323" width="414" height="200"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="200" id="tTv-Z1-Z95"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="kAD-Dx-WsQ" userLabel="Time Stack View">
+                            <rect key="frame" x="151" y="343" width="112" height="26.5"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="time_icon" translatesAutoresizingMaskIntoConstraints="NO" id="ZSi-Kw-z47">
+                                    <rect key="frame" x="0.0" y="0.0" width="23" height="26.5"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01:22:01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBZ-7h-ZGa" userLabel="Time Label">
+                                    <rect key="frame" x="30" y="0.0" width="82" height="26.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="256" verticalCompressionResistancePriority="755" text="3.7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPK-H0-deV" userLabel="Distance Label">
+                            <rect key="frame" x="154.5" y="377.5" width="105" height="69"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="69" id="U68-wK-6ca"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGN-7T-yK2" userLabel="Distance Unit Label">
+                            <rect key="frame" x="259.5" y="422.5" width="27" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" red="0.56078431370000004" green="0.56470588239999997" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="aFC-Fm-m6a" userLabel="Walk Stack View">
+                            <rect key="frame" x="52" y="454.5" width="88" height="26.5"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shoes_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Vec-fE-9ux">
+                                    <rect key="frame" x="0.0" y="0.0" width="23" height="26.5"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 855" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A9N-QR-029" userLabel="Walk Distance Label">
+                                    <rect key="frame" x="30" y="0.0" width="58" height="26.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="aUR-vI-K7J" userLabel="Speed Stack View">
+                            <rect key="frame" x="283.5" y="454.5" width="52.5" height="26.5"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="time_icon" translatesAutoresizingMaskIntoConstraints="NO" id="ANA-50-qng">
+                                    <rect key="frame" x="0.0" y="0.0" width="23" height="26.5"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uev-uT-wGb" userLabel="Speed Unit Label">
+                                    <rect key="frame" x="30" y="0.0" width="22.5" height="26.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="km/h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0d-jq-3g1" userLabel="Speed Label">
+                            <rect key="frame" x="338" y="469" width="24" height="12"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <color key="textColor" red="0.56078431370000004" green="0.56470588239999997" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="aUR-vI-K7J" firstAttribute="bottom" secondItem="K0d-jq-3g1" secondAttribute="bottom" id="1Iv-M7-Bb9"/>
+                        <constraint firstAttribute="trailing" secondItem="iGS-Wa-mEq" secondAttribute="trailing" id="1u1-rt-j6S"/>
+                        <constraint firstAttribute="bottom" secondItem="iGS-Wa-mEq" secondAttribute="bottom" id="61B-bC-zEy"/>
+                        <constraint firstItem="dVU-vC-HqQ" firstAttribute="leading" secondItem="xx0-nF-ofj" secondAttribute="leading" id="6xz-cl-4J2"/>
+                        <constraint firstItem="aFC-Fm-m6a" firstAttribute="leading" secondItem="xx0-nF-ofj" secondAttribute="leading" constant="52" id="7x7-x3-kmH"/>
+                        <constraint firstAttribute="trailing" secondItem="dVU-vC-HqQ" secondAttribute="trailing" id="9Vr-hX-DhS"/>
+                        <constraint firstItem="iGS-Wa-mEq" firstAttribute="leading" secondItem="xx0-nF-ofj" secondAttribute="leading" id="BHU-J3-gln"/>
+                        <constraint firstItem="aFC-Fm-m6a" firstAttribute="top" secondItem="bPK-H0-deV" secondAttribute="bottom" constant="8" id="NNo-Me-6lu"/>
+                        <constraint firstItem="oGN-7T-yK2" firstAttribute="bottom" secondItem="bPK-H0-deV" secondAttribute="bottom" id="UWh-EW-lxZ"/>
+                        <constraint firstItem="kAD-Dx-WsQ" firstAttribute="centerX" secondItem="xx0-nF-ofj" secondAttribute="centerX" id="UnJ-py-xcF"/>
+                        <constraint firstItem="oGN-7T-yK2" firstAttribute="leading" secondItem="bPK-H0-deV" secondAttribute="trailing" id="YVW-QC-bOT"/>
+                        <constraint firstItem="iGS-Wa-mEq" firstAttribute="top" secondItem="xx0-nF-ofj" secondAttribute="top" id="ZW9-Yg-9hM"/>
+                        <constraint firstItem="K0d-jq-3g1" firstAttribute="leading" secondItem="aUR-vI-K7J" secondAttribute="trailing" constant="2" id="hz1-os-JZg"/>
+                        <constraint firstItem="kAD-Dx-WsQ" firstAttribute="top" secondItem="dVU-vC-HqQ" secondAttribute="top" constant="20" id="icZ-re-uGt"/>
+                        <constraint firstItem="bPK-H0-deV" firstAttribute="top" secondItem="kAD-Dx-WsQ" secondAttribute="bottom" constant="8" id="pTT-hg-Prf"/>
+                        <constraint firstItem="aUR-vI-K7J" firstAttribute="centerY" secondItem="aFC-Fm-m6a" secondAttribute="centerY" id="sJN-IT-VbY"/>
+                        <constraint firstAttribute="bottom" secondItem="dVU-vC-HqQ" secondAttribute="bottom" id="uNR-RG-bmD"/>
+                        <constraint firstAttribute="trailing" secondItem="K0d-jq-3g1" secondAttribute="trailing" constant="52" id="wIX-3I-dqD"/>
+                        <constraint firstItem="bPK-H0-deV" firstAttribute="centerX" secondItem="xx0-nF-ofj" secondAttribute="centerX" id="yNe-ks-rvh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Vaa-fN-huO"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="xx0-nF-ofj" firstAttribute="top" secondItem="zCB-NY-XPS" secondAttribute="top" id="UGL-D8-Qyl" userLabel="Map View Top Constraint"/>
+                <constraint firstAttribute="trailing" secondItem="xx0-nF-ofj" secondAttribute="trailing" id="b7q-xV-V0M"/>
+                <constraint firstItem="xx0-nF-ofj" firstAttribute="leading" secondItem="zCB-NY-XPS" secondAttribute="leading" id="v3M-Fa-Dc9"/>
+            </constraints>
+            <point key="canvasLocation" x="267" y="22"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="map" width="375" height="523"/>
+        <image name="shoes_icon" width="23" height="24"/>
+        <image name="time_icon" width="23" height="23"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
