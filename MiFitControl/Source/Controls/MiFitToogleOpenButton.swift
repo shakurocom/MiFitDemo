@@ -21,18 +21,30 @@ final class MiFitToogleOpenButton: UIControl {
     }
 
     override init(frame: CGRect) {
-        self.openAnimationView = LOTAnimationView(name: "play_pause")
-        self.closeAnimationView = LOTAnimationView(name: "pause_play")
-
+        let podBundle = Bundle(for: MiFitToogleOpenButton.self)
+        if let bundleURL = podBundle.url(forResource: "MiFit", withExtension: "bundle"),
+           let bundle = Bundle(url: bundleURL) {
+            self.openAnimationView = LOTAnimationView(name: "play_pause", bundle: bundle)
+            self.closeAnimationView = LOTAnimationView(name: "pause_play", bundle: bundle)
+        } else {
+            self.openAnimationView = LOTAnimationView(name: "play_pause")
+            self.closeAnimationView = LOTAnimationView(name: "pause_play")
+        }
         super.init(frame: frame)
 
         self.commomInit()
     }
 
     required init?(coder: NSCoder) {
-        self.openAnimationView = LOTAnimationView(name: "play_pause")
-        self.closeAnimationView = LOTAnimationView(name: "pause_play")
-
+        let podBundle = Bundle(for: MiFitToogleOpenButton.self)
+        if let bundleURL = podBundle.url(forResource: "MiFit", withExtension: "bundle"),
+           let bundle = Bundle(url: bundleURL) {
+            self.openAnimationView = LOTAnimationView(name: "play_pause", bundle: bundle)
+            self.closeAnimationView = LOTAnimationView(name: "pause_play", bundle: bundle)
+        } else {
+            self.openAnimationView = LOTAnimationView(name: "play_pause")
+            self.closeAnimationView = LOTAnimationView(name: "pause_play")
+        }
         super.init(coder: coder)
 
         self.commomInit()
