@@ -15,7 +15,6 @@
 		6BA52FF228630036009D6E34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BA52FF028630036009D6E34 /* LaunchScreen.storyboard */; };
 		6BA52FFE28630210009D6E34 /* MiFit.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BA52FFD28630210009D6E34 /* MiFit.xcassets */; };
 		6BA530002863021D009D6E34 /* MiFitActivityButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BA52FFF2863021D009D6E34 /* MiFitActivityButton.xib */; };
-		6BA5300A2863026D009D6E34 /* MiFit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BA530092863026D009D6E34 /* MiFit.storyboard */; };
 		6BA5300D28630293009D6E34 /* pause_play.json in Resources */ = {isa = PBXBuildFile; fileRef = 6BA5300B28630293009D6E34 /* pause_play.json */; };
 		6BA5300E28630293009D6E34 /* play_pause.json in Resources */ = {isa = PBXBuildFile; fileRef = 6BA5300C28630293009D6E34 /* play_pause.json */; };
 		6BA53019286302C9009D6E34 /* MiFitStylesheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA5300F286302C9009D6E34 /* MiFitStylesheet.swift */; };
@@ -56,7 +55,6 @@
 		6BA5300528630237009D6E34 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
 		6BA5300628630237009D6E34 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
 		6BA5300728630237009D6E34 /* Rubik-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Bold.ttf"; sourceTree = "<group>"; };
-		6BA530092863026D009D6E34 /* MiFit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MiFit.storyboard; sourceTree = "<group>"; };
 		6BA5300B28630293009D6E34 /* pause_play.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pause_play.json; sourceTree = "<group>"; };
 		6BA5300C28630293009D6E34 /* play_pause.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = play_pause.json; sourceTree = "<group>"; };
 		6BA5300F286302C9009D6E34 /* MiFitStylesheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiFitStylesheet.swift; sourceTree = "<group>"; };
@@ -93,8 +91,8 @@
 		6BA52FD928630035009D6E34 = {
 			isa = PBXGroup;
 			children = (
-				6BA52FE428630035009D6E34 /* MiFitDemo */,
 				6BA52FF9286300A4009D6E34 /* MiFitControl */,
+				6BA52FE428630035009D6E34 /* MiFitDemo */,
 				6BA52FE328630035009D6E34 /* Products */,
 				E3D1AFBCEE04B5EAC004EEA3 /* Pods */,
 				74ED2D18552BBFD1E8CF97A3 /* Frameworks */,
@@ -179,7 +177,6 @@
 		6BA5302328630300009D6E34 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				6BA530092863026D009D6E34 /* MiFit.storyboard */,
 				6BA52FF028630036009D6E34 /* LaunchScreen.storyboard */,
 			);
 			path = UI;
@@ -313,7 +310,6 @@
 				6BA5300E28630293009D6E34 /* play_pause.json in Resources */,
 				6BA530002863021D009D6E34 /* MiFitActivityButton.xib in Resources */,
 				6BA5303728635829009D6E34 /* Raleway-Regular.ttf in Resources */,
-				6BA5300A2863026D009D6E34 /* MiFit.storyboard in Resources */,
 				6BA5303628635827009D6E34 /* Raleway-Medium.ttf in Resources */,
 				6BA52FFE28630210009D6E34 /* MiFit.xcassets in Resources */,
 				6BA5303428634BAC009D6E34 /* MiFitViewController.xib in Resources */,
@@ -529,7 +525,6 @@
 				INFOPLIST_FILE = MiFitDemo/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = MiFit;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -560,7 +555,6 @@
 				INFOPLIST_FILE = MiFitDemo/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = MiFit;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
