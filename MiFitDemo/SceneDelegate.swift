@@ -1,8 +1,5 @@
 //
 //  SceneDelegate.swift
-//  MiFit
-//
-//  Created by Eugene Klyuenkov on 22.06.2022.
 //
 
 import UIKit

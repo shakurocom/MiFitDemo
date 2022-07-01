@@ -23,14 +23,7 @@ public class MiFitViewController: UIViewController {
     @IBOutlet private var middleViewTop: NSLayoutConstraint!
 
     private lazy var routingMap: MiFitMapViewController? = {
-        let controllerBundle: Bundle
-        if let bundleURL = Bundle(for: MiFitViewController.self).url(forResource: "MiFit", withExtension: "bundle"),
-           let bundle = Bundle(url: bundleURL) {
-            controllerBundle = bundle
-        } else {
-            controllerBundle = Bundle.main
-        }
-        let viewController = MiFitMapViewController(nibName: "MiFitMapViewController", bundle: controllerBundle)
+        let viewController = MiFitMapViewController(nibName: "MiFitMapViewController", bundle: Bundle.findBundleIfNeeded(for: MiFitMapViewController.self))
         viewController.screenTopOffset = Constants.topScreenTopOffset
         viewController.animationDuration = Constants.animationDuration
         viewController.prefferedScreenHeight = Constants.prefferedScreenHeight

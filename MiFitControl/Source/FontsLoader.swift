@@ -1,8 +1,6 @@
 //
 //  FontsLoader.swift
 //
-//  Created by Eugene Klyuenkov on 27.06.2022.
-//
 
 import Foundation
 import UIKit
@@ -43,16 +41,8 @@ public class FontsLoader {
             (name: "Rubik-Bold", fontExtension: "ttf"),
             (name: "Rubik-Regular", fontExtension: "ttf")
         ]
-        let bundle: Bundle
-        let podBundle = Bundle(for: MiFitViewController.self)
-        if let actualBundleURL = podBundle.url(forResource: "MiFit", withExtension: "bundle"),
-           let actualBundle = Bundle(url: actualBundleURL) {
-            bundle = actualBundle
-        } else {
-            bundle = Bundle.main
-        }
         for font in fonts {
-            _ = UIFont.registerFont(bundle: bundle, fontName: font.name, fontExtension: font.fontExtension)
+            _ = UIFont.registerFont(bundle: Bundle.findBundleIfNeeded(for: FontsLoader.self), fontName: font.name, fontExtension: font.fontExtension)
         }
     }
 

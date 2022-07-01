@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		020EF05700BB7882632638C5 /* Pods_MiFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F9434B4E3C3972724FBB431 /* Pods_MiFit.framework */; };
 		6B91336E28699EEB00A98894 /* FontsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B91336D28699EEB00A98894 /* FontsLoader.swift */; };
+		6BA4842C286F1BC90030B418 /* Bundle+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA4842B286F1BC90030B418 /* Bundle+Helper.swift */; };
 		6BA52FE628630035009D6E34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA52FE528630035009D6E34 /* AppDelegate.swift */; };
 		6BA52FE828630035009D6E34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA52FE728630035009D6E34 /* SceneDelegate.swift */; };
 		6BA52FEF28630036009D6E34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BA52FEE28630036009D6E34 /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		5F9434B4E3C3972724FBB431 /* Pods_MiFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiFit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B91336D28699EEB00A98894 /* FontsLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontsLoader.swift; sourceTree = "<group>"; };
+		6BA4842B286F1BC90030B418 /* Bundle+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Helper.swift"; sourceTree = "<group>"; };
 		6BA52FE228630035009D6E34 /* MiFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BA52FE528630035009D6E34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BA52FE728630035009D6E34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 		6BA53025286303F2009D6E34 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				6BA4842B286F1BC90030B418 /* Bundle+Helper.swift */,
 				6BA53016286302C9009D6E34 /* CALayer+Helpers.swift */,
 				6BA53011286302C9009D6E34 /* CGRect+Helpers.swift */,
 				6BA5302828630598009D6E34 /* UIColor+Bundle.swift */,
@@ -367,6 +370,7 @@
 			files = (
 				6BA5301E286302C9009D6E34 /* MiFitPinView.swift in Sources */,
 				6BA5302A28630598009D6E34 /* UIColor+Bundle.swift in Sources */,
+				6BA4842C286F1BC90030B418 /* Bundle+Helper.swift in Sources */,
 				6BA5301B286302C9009D6E34 /* CGRect+Helpers.swift in Sources */,
 				6BA53021286302C9009D6E34 /* MiFitActivityContainer.swift in Sources */,
 				6BA5301F286302C9009D6E34 /* MiFitActivityButton.swift in Sources */,
