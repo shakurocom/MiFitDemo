@@ -9,6 +9,8 @@ class MiFitActivityContainer: UIView {
             }
         }
     }
+
+    /// Called when an activity is selected.
     var didSelectActivity: ((_: Activity) -> Void)?
 
     @IBOutlet private var titleLabel: UILabel!
@@ -41,6 +43,7 @@ class MiFitActivityContainer: UIView {
         activity = miFitActivityButtons.last?.activity
     }
 
+    /// Sets the scrollView to the center.
     func centerSctollView() {
         let count = stackView.arrangedSubviews.count
         let spaces = stackView.spacing * CGFloat(count - 1)

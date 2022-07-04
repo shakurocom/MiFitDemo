@@ -22,9 +22,12 @@ class MiFitContainerView: UIView {
         static let arcShapeSize = CGSize(width: 660.0, height: 320.0)
     }
 
+    /// Current activity from ActivityView.
     var activity: Activity? {
         return activityView.activity
     }
+
+    /// Called when an activity is selected.
     var didSelectActivity: ((_: Activity) -> Void)? {
         get {
             return activityView.didSelectActivity
@@ -96,6 +99,8 @@ class MiFitContainerView: UIView {
         activityView.centerSctollView()
     }
 
+    /// Start/Stop activity. Animated.
+    /// - parameter duration: Animation duration. TimeInterval.
     func toogleOpen(duration: TimeInterval) {
         delegate?.mifitContainerViewWillChangeClippingSize()
 
@@ -105,6 +110,8 @@ class MiFitContainerView: UIView {
         resizeClippingLayer(duration: duration)
     }
 
+    /// Recalculation layers size with offset.
+    /// - parameter offset: CGFloat.
     func recalcLayersFrames(offset: CGFloat) {
         viewTopOffset = offset
 

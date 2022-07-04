@@ -6,6 +6,7 @@ final class MiFitToogleOpenButton: UIControl {
     private var openAnimationView: LOTAnimationView
     private var closeAnimationView: LOTAnimationView
 
+    /// Boolean value which animation to show.
     var isOpen: Bool = false {
         didSet {
             openAnimationView.isHidden = isOpen
@@ -42,6 +43,7 @@ final class MiFitToogleOpenButton: UIControl {
         return openAnimationView.isHidden ? closeAnimationView.intrinsicContentSize : openAnimationView.intrinsicContentSize
     }
 
+    /// Starts the animation depending on the state of the button.
     func runToogleOpenAnimation() {
         isEnabled = false
         let completionClosure: (Bool) -> Void = { [weak self] (_) in

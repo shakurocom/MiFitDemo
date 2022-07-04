@@ -55,6 +55,7 @@ class MiFitActivityButton: UIView {
     @IBOutlet private var imageView: UIImageView!
     @IBOutlet private var titleLabel: UILabel!
 
+    /// Activity type for button style. The defaul value is `nil`.
     var activity: Activity? {
         didSet {
             backgroundColor = activity?.backgroundColor
@@ -67,6 +68,7 @@ class MiFitActivityButton: UIView {
         }
     }
 
+    /// Button style if selected. The default value is `false`.
     var isSelected: Bool = false {
         didSet {
             backgroundColor = isSelected ? UIColor.loadColorFromBundle(name: "mifit") : UIColor.loadColorFromBundle(name: "txt100")
