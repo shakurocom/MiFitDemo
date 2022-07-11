@@ -38,6 +38,7 @@
 		6BA5303728635829009D6E34 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6BA5300628630237009D6E34 /* Raleway-Regular.ttf */; };
 		6BA530382863582B009D6E34 /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6BA5300728630237009D6E34 /* Rubik-Bold.ttf */; };
 		6BA530392863582D009D6E34 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6BA5300528630237009D6E34 /* Rubik-Regular.ttf */; };
+		6BE77303287C65E3000ED5FB /* MiFit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 6BE77302287C65E3000ED5FB /* MiFit.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		6BA5302B2863441F009D6E34 /* UIViewController+Child.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Child.swift"; sourceTree = "<group>"; };
 		6BA5302D28634768009D6E34 /* MiFitMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MiFitMapViewController.xib; sourceTree = "<group>"; };
 		6BA5303328634BAC009D6E34 /* MiFitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MiFitViewController.xib; sourceTree = "<group>"; };
+		6BE77302287C65E3000ED5FB /* MiFit.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = MiFit.podspec; sourceTree = SOURCE_ROOT; };
 		88B5690DF7DA67B11035A2EA /* Pods-MiFit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiFit.release.xcconfig"; path = "Target Support Files/Pods-MiFit/Pods-MiFit.release.xcconfig"; sourceTree = "<group>"; };
 		FD31E27EC045B446B082F2D0 /* Pods-MiFit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiFit.debug.xcconfig"; path = "Target Support Files/Pods-MiFit/Pods-MiFit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,6 +97,7 @@
 			children = (
 				6BA52FF9286300A4009D6E34 /* MiFitControl */,
 				6BA52FE428630035009D6E34 /* MiFitDemo */,
+				6BE77301287C65C7000ED5FB /* Scripts */,
 				6BA52FE328630035009D6E34 /* Products */,
 				E3D1AFBCEE04B5EAC004EEA3 /* Pods */,
 				74ED2D18552BBFD1E8CF97A3 /* Frameworks */,
@@ -141,11 +144,8 @@
 		6BA52FFB2863018C009D6E34 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				6B91336D28699EEB00A98894 /* FontsLoader.swift */,
-				6BA5300F286302C9009D6E34 /* MiFitStylesheet.swift */,
+				6BE77300287C65AB000ED5FB /* Common */,
 				6BA530242863038B009D6E34 /* Controllers */,
-				6BA530262863044B009D6E34 /* Controls */,
-				6BA53025286303F2009D6E34 /* Extensions */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -224,6 +224,25 @@
 				6BA52FFF2863021D009D6E34 /* MiFitActivityButton.xib */,
 			);
 			path = Controls;
+			sourceTree = "<group>";
+		};
+		6BE77300287C65AB000ED5FB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6B91336D28699EEB00A98894 /* FontsLoader.swift */,
+				6BA5300F286302C9009D6E34 /* MiFitStylesheet.swift */,
+				6BA530262863044B009D6E34 /* Controls */,
+				6BA53025286303F2009D6E34 /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		6BE77301287C65C7000ED5FB /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				6BE77302287C65E3000ED5FB /* MiFit.podspec */,
+			);
+			path = Scripts;
 			sourceTree = "<group>";
 		};
 		74ED2D18552BBFD1E8CF97A3 /* Frameworks */ = {
@@ -313,6 +332,7 @@
 				6BA5300E28630293009D6E34 /* play_pause.json in Resources */,
 				6BA530002863021D009D6E34 /* MiFitActivityButton.xib in Resources */,
 				6BA5303728635829009D6E34 /* Raleway-Regular.ttf in Resources */,
+				6BE77303287C65E3000ED5FB /* MiFit.podspec in Resources */,
 				6BA5303628635827009D6E34 /* Raleway-Medium.ttf in Resources */,
 				6BA52FFE28630210009D6E34 /* MiFit.xcassets in Resources */,
 				6BA5303428634BAC009D6E34 /* MiFitViewController.xib in Resources */,
