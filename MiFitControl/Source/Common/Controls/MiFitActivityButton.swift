@@ -23,28 +23,28 @@ extension ActivityList {
     static func generate() -> ActivityList {
         return ActivityList(items: [
             Activity(
-                image: UIImage.loadImageFromBundle(name: "running_icon"),
+                image: MiFitBundleHelper.readImage(named: "running_icon"),
                 title: NSLocalizedString("Running", comment: ""),
-                backgroundColor: UIColor.loadColorFromBundle(name: "txt100"),
-                textColor: UIColor.loadColorFromBundle(name: "mifitTextColor100"),
+                backgroundColor: MiFitBundleHelper.readColor(named: "txt100"),
+                textColor: MiFitBundleHelper.readColor(named: "mifitTextColor100"),
                 type: .running),
             Activity(
-                image: UIImage.loadImageFromBundle(name: "treadmill_icon"),
+                image: MiFitBundleHelper.readImage(named: "treadmill_icon"),
                 title: NSLocalizedString("Treadmill", comment: ""),
-                backgroundColor: UIColor.loadColorFromBundle(name: "txt100"),
-                textColor: UIColor.loadColorFromBundle(name: "mifitTextColor100"),
+                backgroundColor: MiFitBundleHelper.readColor(named: "txt100"),
+                textColor: MiFitBundleHelper.readColor(named: "mifitTextColor100"),
                 type: .treadmill),
             Activity(
-                image: UIImage.loadImageFromBundle(name: "cycling_icon"),
+                image: MiFitBundleHelper.readImage(named: "cycling_icon"),
                 title: NSLocalizedString("Cycling", comment: ""),
-                backgroundColor: UIColor.loadColorFromBundle(name: "txt100"),
-                textColor: UIColor.loadColorFromBundle(name: "mifitTextColor100"),
+                backgroundColor: MiFitBundleHelper.readColor(named: "txt100"),
+                textColor: MiFitBundleHelper.readColor(named: "mifitTextColor100"),
                 type: .cycling),
             Activity(
-                image: UIImage.loadImageFromBundle(name: "walking_icon"),
+                image: MiFitBundleHelper.readImage(named: "walking_icon"),
                 title: NSLocalizedString("Walking", comment: ""),
-                backgroundColor: UIColor.loadColorFromBundle(name: "mifit"),
-                textColor: UIColor.loadColorFromBundle(name: "txt100"),
+                backgroundColor: MiFitBundleHelper.readColor(named: "mifit"),
+                textColor: MiFitBundleHelper.readColor(named: "txt100"),
                 type: .walking)
         ])
     }
@@ -71,9 +71,9 @@ class MiFitActivityButton: UIView {
     /// Button style if selected. The default value is `false`.
     var isSelected: Bool = false {
         didSet {
-            backgroundColor = isSelected ? UIColor.loadColorFromBundle(name: "mifit") : UIColor.loadColorFromBundle(name: "txt100")
-            imageView.tintColor = isSelected ? UIColor.loadColorFromBundle(name: "txt100") : UIColor.loadColorFromBundle(name: "mifitTextColor100")
-            titleLabel.textColor = isSelected ? UIColor.loadColorFromBundle(name: "txt100") : UIColor.loadColorFromBundle(name: "mifitTextColor100")
+            backgroundColor = isSelected ? MiFitBundleHelper.readColor(named: "mifit") : MiFitBundleHelper.readColor(named: "txt100")
+            imageView.tintColor = isSelected ? MiFitBundleHelper.readColor(named: "txt100") : MiFitBundleHelper.readColor(named: "mifitTextColor100")
+            titleLabel.textColor = isSelected ? MiFitBundleHelper.readColor(named: "txt100") : MiFitBundleHelper.readColor(named: "mifitTextColor100")
         }
     }
 

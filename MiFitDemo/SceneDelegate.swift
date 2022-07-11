@@ -14,7 +14,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             return
         }
         let window = UIWindow(windowScene: windowScene)
-        let viewController = MiFitViewController(nibName: "MiFitViewController", bundle: nil)
+        let viewController = MiFitViewController.loadFromNib()
         window.rootViewController = viewController
         window.makeKeyAndVisible()
         self.window = window

@@ -15,8 +15,8 @@ class MiFitPinView: UIView {
         innerCircle.fillColor = UIColor.white.cgColor
 
         outerCircle.lineWidth = 1.0
-        outerCircle.strokeColor = UIColor.loadColorFromBundle(name: "mifit")?.cgColor
-        outerCircle.fillColor = UIColor.loadColorFromBundle(name: "mifit")?.withAlphaComponent(0.1).cgColor
+        outerCircle.strokeColor = MiFitBundleHelper.readColor(named: "mifit")?.cgColor
+        outerCircle.fillColor = MiFitBundleHelper.readColor(named: "mifit")?.withAlphaComponent(0.1).cgColor
         outerCircle.lineCap = .round
 
         layer.addSublayer(outerCircle)

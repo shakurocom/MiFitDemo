@@ -10,12 +10,23 @@ class WeakTarget: NSObject {
 
 public class MiFitViewController: UIViewController {
 
-    struct Option {}
-
     private enum Constants {
         static let prefferedScreenHeight: CGFloat = 896.0
         static let animationDuration: TimeInterval = 0.5
         static let topScreenTopOffset: CGFloat = UIScreen.main.bounds.height < prefferedScreenHeight ? -117.0 : -56.0
+    }
+
+    static func loadFromNib() -> MiFitViewController {
+        let fonts: [(fontName: String, fontExtension: String)] = [
+            (fontName: "Raleway-Light", fontExtension: "ttf"),
+            (fontName: "Raleway-Medium", fontExtension: "ttf"),
+            (fontName: "Raleway-Regular", fontExtension: "ttf"),
+            (fontName: "Rubik-Bold", fontExtension: "ttf"),
+            (fontName: "Rubik-Regular", fontExtension: "ttf")
+        ]
+        MiFitBundleHelper.registerFonts(fonts)
+        let viewController = MiFitViewController(nibName: "MiFitViewController", bundle: MiFitBundleHelper.bundle)
+        return viewController
     }
 
     @IBOutlet private var containerView: MiFitContainerView!
@@ -23,7 +34,7 @@ public class MiFitViewController: UIViewController {
     @IBOutlet private var middleViewTop: NSLayoutConstraint!
 
     private lazy var routingMap: MiFitMapViewController? = {
-        let viewController = MiFitMapViewController(nibName: "MiFitMapViewController", bundle: Bundle.findBundleIfNeeded(for: MiFitMapViewController.self))
+        let viewController = MiFitMapViewController.loadFromNib()
         viewController.screenTopOffset = Constants.topScreenTopOffset
         viewController.animationDuration = Constants.animationDuration
         viewController.prefferedScreenHeight = Constants.prefferedScreenHeight
@@ -36,10 +47,10 @@ public class MiFitViewController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = UIColor.loadColorFromBundle(name: "mifitBackground100")
+        view.backgroundColor = MiFitBundleHelper.readColor(named: "mifitBackground100")
         containerView.delegate = self
 
-        toogleOpenButton.layer.shadowColor = UIColor.loadColorFromBundle(name: "start_pause_button_shadow")?.cgColor
+        toogleOpenButton.layer.shadowColor = MiFitBundleHelper.readColor(named: "start_pause_button_shadow")?.cgColor
         toogleOpenButton.layer.shadowOpacity = 0.48
         toogleOpenButton.layer.shadowRadius = 20.0
         toogleOpenButton.layer.shadowOffset = CGSize(width: 0.0, height: 10.0)
@@ -81,10 +92,12 @@ extension MiFitViewController: MiFitContainerViewDelegate {
 }
 
 private extension MiFitViewController {
+
     private func shakeAnimation() -> CAKeyframeAnimation {
         let values = [0.0, (containerView.isOpen ? 70.0 : -70.0), (containerView.isOpen ? -70.0 : 70.0), 0.0]
         let valueFunction = CAValueFunction(name: .translateY)
 
         return CALayer.keyFrameAnimation(for: #keyPath(CALayer.transform), values: values, duration: Constants.animationDuration, valueFunction: valueFunction)
     }
+
 }

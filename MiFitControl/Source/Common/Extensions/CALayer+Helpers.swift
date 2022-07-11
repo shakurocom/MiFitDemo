@@ -1,6 +1,7 @@
 import UIKit
 
 extension CALayer {
+
     class func basicAnimation(for keyPath: String, fromValue: Any, toValue: Any, duration: TimeInterval, valueFunction: CAValueFunction? = nil) -> CABasicAnimation {
         let animation = CABasicAnimation(keyPath: keyPath)
 
@@ -36,4 +37,5 @@ extension CALayer {
 
         return animation
     }
+
 }
