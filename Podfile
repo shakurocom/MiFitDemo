@@ -1,12 +1,24 @@
-# Uncomment the next line to define a global platform for your project
-platform :ios, '11.0'
+platform :ios, '13.0'
+use_frameworks!
 
 target 'MiFit' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
 
-  # Pods for MiFit
+  pod 'Shakuro.CommonTypes'
   pod 'lottie-ios', '2.5.2'
+
+end
+
+# Post Install "error: IB Designables: Failed to render and update auto layout ..." fix
+post_install do |installer|
+    installer.pods_project.build_configurations.each do |config|
+        config.build_settings.delete('CODE_SIGNING_ALLOWED')
+        config.build_settings.delete('CODE_SIGNING_REQUIRED')
+    end
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+      end
+    end
 
 end
 

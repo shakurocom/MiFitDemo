@@ -1,16 +1,20 @@
 PODS:
   - lottie-ios (2.5.2)
+  - Shakuro.CommonTypes (1.1.2)
 
 DEPENDENCIES:
   - lottie-ios (= 2.5.2)
+  - Shakuro.CommonTypes
 
 SPEC REPOS:
   trunk:
     - lottie-ios
+    - Shakuro.CommonTypes
 
 SPEC CHECKSUMS:
   lottie-ios: 3fef45d3fabe63e3c7c2eb603dd64ddfffc73062
+  Shakuro.CommonTypes: d7145227330b0033eaecb2dd89a29cfe28b7c547
 
-PODFILE CHECKSUM: 1e467eace970537b39b930e7c58411a35dcf72a9
+PODFILE CHECKSUM: d3dc18dfff4dd8240f195511987587e17b483f87
 
 COCOAPODS: 1.11.3
