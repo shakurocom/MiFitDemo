@@ -17,16 +17,7 @@ public class MiFitViewController: UIViewController {
     }
 
     static func loadFromNib() -> MiFitViewController {
-        let fonts: [(fontName: String, fontExtension: String)] = [
-            (fontName: "Raleway-Light", fontExtension: "ttf"),
-            (fontName: "Raleway-Medium", fontExtension: "ttf"),
-            (fontName: "Raleway-Regular", fontExtension: "ttf"),
-            (fontName: "Rubik-Bold", fontExtension: "ttf"),
-            (fontName: "Rubik-Regular", fontExtension: "ttf")
-        ]
-        MiFitBundleHelper.registerFonts(fonts)
-        let viewController = MiFitViewController(nibName: "MiFitViewController", bundle: MiFitBundleHelper.bundle)
-        return viewController
+        return MiFitBundleHelper.instantiateViewController(targetClass: MiFitViewController.self, nibName: "MiFitViewController")
     }
 
     @IBOutlet private var containerView: MiFitContainerView!
@@ -47,10 +38,10 @@ public class MiFitViewController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = MiFitBundleHelper.readColor(named: "mifitBackground100")
+        view.backgroundColor = MiFitBundleHelper.color(named: "mifitBackground100")
         containerView.delegate = self
 
-        toogleOpenButton.layer.shadowColor = MiFitBundleHelper.readColor(named: "start_pause_button_shadow")?.cgColor
+        toogleOpenButton.layer.shadowColor = MiFitBundleHelper.color(named: "start_pause_button_shadow")?.cgColor
         toogleOpenButton.layer.shadowOpacity = 0.48
         toogleOpenButton.layer.shadowRadius = 20.0
         toogleOpenButton.layer.shadowOffset = CGSize(width: 0.0, height: 10.0)

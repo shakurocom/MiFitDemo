@@ -40,7 +40,7 @@ class MiFitMapViewController: UIViewController {
     private var collapsedDistUnitPos: CGPoint = .zero
 
     private lazy var gradient: CAGradientLayer? = {
-        if let start = MiFitBundleHelper.readColor(named: "mifitBackground200")?.withAlphaComponent(0.0), let end = MiFitBundleHelper.readColor(named: "mifitBackground200")?.withAlphaComponent(1.0) {
+        if let start = MiFitBundleHelper.color(named: "mifitBackground200")?.withAlphaComponent(0.0), let end = MiFitBundleHelper.color(named: "mifitBackground200")?.withAlphaComponent(1.0) {
             let gradient = CAGradientLayer()
 
             gradient.colors = [start, end]
@@ -57,30 +57,30 @@ class MiFitMapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = MiFitBundleHelper.readColor(named: "mifitBackground200")
+        view.backgroundColor = MiFitBundleHelper.color(named: "mifitBackground200")
 
         mapViewTopConstraint.constant = screenTopOffset
 
-        timeLabel.textColor = MiFitBundleHelper.readColor(named: "txt100")
+        timeLabel.textColor = MiFitBundleHelper.color(named: "txt100")
         timeLabel.font = MiFitStylesheet.FontFace.rubikRegular.fontWithSize(22.0)
         timeLabel.text = "--:--:--"
 
-        distanceLabel.textColor = MiFitBundleHelper.readColor(named: "txt100")
+        distanceLabel.textColor = MiFitBundleHelper.color(named: "txt100")
         distanceLabel.font = MiFitStylesheet.FontFace.rubikBold.fontWithSize(96.0)
         distanceLabel.text = "--.--"
 
-        distanceUnitLabel.textColor = MiFitBundleHelper.readColor(named: "txt100")
+        distanceUnitLabel.textColor = MiFitBundleHelper.color(named: "txt100")
         distanceUnitLabel.font = MiFitStylesheet.FontFace.ralewayRegular.fontWithSize(20.0)
 
-        walkDistanceLabel.textColor = MiFitBundleHelper.readColor(named: "txt100")
+        walkDistanceLabel.textColor = MiFitBundleHelper.color(named: "txt100")
         walkDistanceLabel.font = MiFitStylesheet.FontFace.rubikRegular.fontWithSize(22.0)
         walkDistanceLabel.text = "---"
 
-        speedLabel.textColor = MiFitBundleHelper.readColor(named: "txt100")
+        speedLabel.textColor = MiFitBundleHelper.color(named: "txt100")
         speedLabel.font = MiFitStylesheet.FontFace.rubikRegular.fontWithSize(22.0)
         speedLabel.text = "---"
 
-        speedUnitLabel.textColor = MiFitBundleHelper.readColor(named: "mifitTextColor100")
+        speedUnitLabel.textColor = MiFitBundleHelper.color(named: "mifitTextColor100")
         speedUnitLabel.font = MiFitStylesheet.FontFace.ralewayRegular.fontWithSize(10.0)
     }
 
@@ -152,7 +152,7 @@ class MiFitMapViewController: UIViewController {
 
 private extension MiFitMapViewController {
     private func createRoutingPinView() -> MiFitPinView? {
-        if routingMapPinView == nil, let size = MiFitBundleHelper.readImage(named: "map")?.size {
+        if routingMapPinView == nil, let size = MiFitBundleHelper.image(named: "map")?.size {
             let xScale = routingMapView.bounds.width / size.width
             let yScale = routingMapView.bounds.height / size.height
 

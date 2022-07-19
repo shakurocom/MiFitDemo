@@ -23,13 +23,12 @@ class MiFitActivityContainer: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
 
-        titleLabel.textColor = MiFitBundleHelper.readColor(named: "mifitTextColor100")
+        titleLabel.textColor = MiFitBundleHelper.color(named: "mifitTextColor100")
         titleLabel.text = NSLocalizedString("Choose type of activity", comment: "")
         titleLabel.font = MiFitStylesheet.FontFace.ralewayMedium.fontWithSize(16.0)
 
-        let buttonBundle = MiFitBundleHelper.bundle
         ActivityList.generate().items.forEach { activity in
-            if let subView = buttonBundle.loadNibNamed("MiFitActivityButton", owner: nil)?[0] as? MiFitActivityButton {
+            if let subView = MiFitBundleHelper.bundle.loadNibNamed("MiFitActivityButton", owner: nil)?[0] as? MiFitActivityButton {
                 let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
                 subView.addGestureRecognizer(tap)
                 subView.activity = activity
