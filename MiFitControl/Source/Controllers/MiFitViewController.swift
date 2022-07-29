@@ -17,7 +17,7 @@ public class MiFitViewController: UIViewController {
     }
 
     static func loadFromNib() -> MiFitViewController {
-        return MiFitBundleHelper.instantiateViewController(targetClass: MiFitViewController.self, nibName: "MiFitViewController")
+        return Bundle.miFitBundleHelper.instantiateViewController(targetClass: MiFitViewController.self, nibName: "MiFitViewController")
     }
 
     @IBOutlet private var containerView: MiFitContainerView!
@@ -38,10 +38,10 @@ public class MiFitViewController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = MiFitBundleHelper.color(named: "mifitBackground100")
+        view.backgroundColor = Bundle.miFitBundleHelper.color(named: "mifitBackground100")
         containerView.delegate = self
 
-        toogleOpenButton.layer.shadowColor = MiFitBundleHelper.color(named: "start_pause_button_shadow")?.cgColor
+        toogleOpenButton.layer.shadowColor = Bundle.miFitBundleHelper.color(named: "start_pause_button_shadow")?.cgColor
         toogleOpenButton.layer.shadowOpacity = 0.48
         toogleOpenButton.layer.shadowRadius = 20.0
         toogleOpenButton.layer.shadowOffset = CGSize(width: 0.0, height: 10.0)

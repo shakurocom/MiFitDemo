@@ -22,7 +22,7 @@ final class MiFitToogleOpenButton: UIControl {
     }
 
     override init(frame: CGRect) {
-        let bundle = MiFitBundleHelper.bundle
+        let bundle = Bundle.miFitBundleHelper.bundle
         self.openAnimationView = LOTAnimationView(name: "play_pause", bundle: bundle)
         self.closeAnimationView = LOTAnimationView(name: "pause_play", bundle: bundle)
         super.init(frame: frame)
@@ -31,7 +31,7 @@ final class MiFitToogleOpenButton: UIControl {
     }
 
     required init?(coder: NSCoder) {
-        let bundle = MiFitBundleHelper.bundle
+        let bundle = Bundle.miFitBundleHelper.bundle
         self.openAnimationView = LOTAnimationView(name: "play_pause", bundle: bundle)
         self.closeAnimationView = LOTAnimationView(name: "pause_play", bundle: bundle)
         super.init(coder: coder)
