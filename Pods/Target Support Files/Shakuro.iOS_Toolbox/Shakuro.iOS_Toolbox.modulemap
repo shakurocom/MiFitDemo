@@ -1,0 +1,6 @@
+framework module Shakuro_iOS_Toolbox {
+  umbrella header "Shakuro.iOS_Toolbox-umbrella.h"
+
+  export *
+  module * { export * }
+}

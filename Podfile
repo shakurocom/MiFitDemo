@@ -1,10 +1,13 @@
 platform :ios, '13.0'
 use_frameworks!
 
+ToolboxCommit = 'b3053718eb54fb8e5f39d5a1b54f8b0f82577f44'
+
 target 'MiFit' do
 
   pod 'Shakuro.CommonTypes'
   pod 'lottie-ios', '2.5.2'
+  pod 'Shakuro.iOS_Toolbox', :git => 'https://gitlab.com/shakuro-public/ios_toolbox.git', :commit => ToolboxCommit
 
 end
 

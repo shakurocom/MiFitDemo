@@ -1,20 +1,110 @@
 PODS:
+  - Alamofire (5.1.0)
+  - CommonCryptoModule (1.0.2)
   - lottie-ios (2.5.2)
+  - pop (1.0.12)
   - Shakuro.CommonTypes (1.1.3)
+  - Shakuro.iOS_Toolbox (0.22.0):
+    - Shakuro.iOS_Toolbox/AsyncResult (= 0.22.0)
+    - Shakuro.iOS_Toolbox/ContainerViewController (= 0.22.0)
+    - Shakuro.iOS_Toolbox/DecelerationHelper (= 0.22.0)
+    - Shakuro.iOS_Toolbox/Device (= 0.22.0)
+    - Shakuro.iOS_Toolbox/DraggableDetailsOverlay (= 0.22.0)
+    - Shakuro.iOS_Toolbox/EMail (= 0.22.0)
+    - Shakuro.iOS_Toolbox/EventHandler (= 0.22.0)
+    - Shakuro.iOS_Toolbox/Exceptions (= 0.22.0)
+    - Shakuro.iOS_Toolbox/Extensions (= 0.22.0)
+    - Shakuro.iOS_Toolbox/GenericError (= 0.22.0)
+    - Shakuro.iOS_Toolbox/HorizontalInfinityScrollView (= 0.22.0)
+    - Shakuro.iOS_Toolbox/HTTPClient (= 0.22.0)
+    - Shakuro.iOS_Toolbox/ImageProcessing (= 0.22.0)
+    - Shakuro.iOS_Toolbox/Keyboard (= 0.22.0)
+    - Shakuro.iOS_Toolbox/Keychain (= 0.22.0)
+    - Shakuro.iOS_Toolbox/Labels (= 0.22.0)
+    - Shakuro.iOS_Toolbox/PlaceholderTextView (= 0.22.0)
+    - Shakuro.iOS_Toolbox/PoliteCoreData (= 0.22.0)
+    - Shakuro.iOS_Toolbox/PullToRefresh (= 0.22.0)
+    - Shakuro.iOS_Toolbox/Router (= 0.22.0)
+    - Shakuro.iOS_Toolbox/Settings (= 0.22.0)
+    - Shakuro.iOS_Toolbox/TaskManager (= 0.22.0)
+    - Shakuro.iOS_Toolbox/Utils (= 0.22.0)
+    - Shakuro.iOS_Toolbox/Vibrations (= 0.22.0)
+    - Shakuro.iOS_Toolbox/VideoCamera (= 0.22.0)
+  - Shakuro.iOS_Toolbox/AsyncResult (0.22.0)
+  - Shakuro.iOS_Toolbox/ContainerViewController (0.22.0)
+  - Shakuro.iOS_Toolbox/DecelerationHelper (0.22.0)
+  - Shakuro.iOS_Toolbox/Device (0.22.0)
+  - Shakuro.iOS_Toolbox/DraggableDetailsOverlay (0.22.0):
+    - Shakuro.iOS_Toolbox/DecelerationHelper
+    - Shakuro.iOS_Toolbox/Extensions
+  - Shakuro.iOS_Toolbox/EMail (0.22.0)
+  - Shakuro.iOS_Toolbox/EventHandler (0.22.0):
+    - Shakuro.iOS_Toolbox/Extensions
+  - Shakuro.iOS_Toolbox/Exceptions (0.22.0)
+  - Shakuro.iOS_Toolbox/Extensions (0.22.0):
+    - CommonCryptoModule (= 1.0.2)
+  - Shakuro.iOS_Toolbox/GenericError (0.22.0)
+  - Shakuro.iOS_Toolbox/HorizontalInfinityScrollView (0.22.0):
+    - pop (= 1.0.12)
+    - Shakuro.iOS_Toolbox/DecelerationHelper
+    - Shakuro.iOS_Toolbox/Extensions
+  - Shakuro.iOS_Toolbox/HTTPClient (0.22.0):
+    - Alamofire (= 5.1.0)
+    - Shakuro.iOS_Toolbox/AsyncResult
+    - Shakuro.iOS_Toolbox/GenericError
+  - Shakuro.iOS_Toolbox/ImageProcessing (0.22.0)
+  - Shakuro.iOS_Toolbox/Keyboard (0.22.0)
+  - Shakuro.iOS_Toolbox/Keychain (0.22.0)
+  - Shakuro.iOS_Toolbox/Labels (0.22.0)
+  - Shakuro.iOS_Toolbox/PlaceholderTextView (0.22.0)
+  - Shakuro.iOS_Toolbox/PoliteCoreData (0.22.0)
+  - Shakuro.iOS_Toolbox/PullToRefresh (0.22.0)
+  - Shakuro.iOS_Toolbox/Router (0.22.0):
+    - Shakuro.iOS_Toolbox/AsyncResult
+    - Shakuro.iOS_Toolbox/ContainerViewController
+    - Shakuro.iOS_Toolbox/Extensions
+  - Shakuro.iOS_Toolbox/Settings (0.22.0)
+  - Shakuro.iOS_Toolbox/TaskManager (0.22.0):
+    - Shakuro.iOS_Toolbox/AsyncResult
+    - Shakuro.iOS_Toolbox/Extensions
+  - Shakuro.iOS_Toolbox/Utils (0.22.0)
+  - Shakuro.iOS_Toolbox/Vibrations (0.22.0):
+    - Shakuro.iOS_Toolbox/Device
+  - Shakuro.iOS_Toolbox/VideoCamera (0.22.0):
+    - Shakuro.iOS_Toolbox/Device
+    - Shakuro.iOS_Toolbox/ImageProcessing
 
 DEPENDENCIES:
   - lottie-ios (= 2.5.2)
   - Shakuro.CommonTypes
+  - Shakuro.iOS_Toolbox (from `https://gitlab.com/shakuro-public/ios_toolbox.git`, commit `b3053718eb54fb8e5f39d5a1b54f8b0f82577f44`)
 
 SPEC REPOS:
   trunk:
+    - Alamofire
+    - CommonCryptoModule
     - lottie-ios
+    - pop
     - Shakuro.CommonTypes
 
-SPEC CHECKSUMS:
-  lottie-ios: 3fef45d3fabe63e3c7c2eb603dd64ddfffc73062
-  Shakuro.CommonTypes: 97a477905259f2ac278a999ad38af8dfa9dd6c87
+EXTERNAL SOURCES:
+  Shakuro.iOS_Toolbox:
+    :commit: b3053718eb54fb8e5f39d5a1b54f8b0f82577f44
+    :git: https://gitlab.com/shakuro-public/ios_toolbox.git
 
-PODFILE CHECKSUM: d3dc18dfff4dd8240f195511987587e17b483f87
+CHECKOUT OPTIONS:
+  Shakuro.iOS_Toolbox:
+    :commit: b3053718eb54fb8e5f39d5a1b54f8b0f82577f44
+    :git: https://gitlab.com/shakuro-public/ios_toolbox.git
+
+SPEC CHECKSUMS:
+  Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
+  CommonCryptoModule: 63a68b57abed79655b3a01011419bf037a05b0a0
+  lottie-ios: 3fef45d3fabe63e3c7c2eb603dd64ddfffc73062
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  Shakuro.CommonTypes: 97a477905259f2ac278a999ad38af8dfa9dd6c87
+  Shakuro.iOS_Toolbox: e9783546009b28be9abda7b471bbc8d7f358b6d6
+
+PODFILE CHECKSUM: 6305c8834d769761dc2d2a1ca83d342ec0baddd9
 
 COCOAPODS: 1.11.3

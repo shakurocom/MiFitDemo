@@ -1,0 +1,241 @@
+{
+  "name": "Shakuro.iOS_Toolbox",
+  "version": "0.22.0",
+  "summary": "A bunch of components for iOS",
+  "homepage": "https://github.com/shakurocom/iOS_Toolbox",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Sanakabarabaka": "slaschuk@shakuro.com",
+    "wwwpix": "spopov@shakuro.com"
+  },
+  "source": {
+    "git": "https://github.com/shakurocom/iOS_Toolbox.git",
+    "tag": "0.22.0"
+  },
+  "swift_versions": "5.0",
+  "platforms": {
+    "ios": "10.0"
+  },
+  "subspecs": [
+    {
+      "name": "AsyncResult",
+      "source_files": "AsyncResult/Source/**/*",
+      "frameworks": "Foundation"
+    },
+    {
+      "name": "ContainerViewController",
+      "source_files": "ContainerViewController/Source/**/*",
+      "frameworks": "UIKit"
+    },
+    {
+      "name": "DecelerationHelper",
+      "source_files": "DecelerationHelper/Source/**/*",
+      "frameworks": "UIKit"
+    },
+    {
+      "name": "Device",
+      "source_files": "Device/Source/**/*",
+      "frameworks": [
+        "UIKit",
+        "CoreMotion"
+      ]
+    },
+    {
+      "name": "DraggableDetailsOverlay",
+      "dependencies": {
+        "Shakuro.iOS_Toolbox/Extensions": [
+
+        ],
+        "Shakuro.iOS_Toolbox/DecelerationHelper": [
+
+        ]
+      },
+      "source_files": "DraggableDetailsOverlay/Source/**/*",
+      "frameworks": "UIKit"
+    },
+    {
+      "name": "EMail",
+      "source_files": "EMail/Source/**/*",
+      "frameworks": "Foundation"
+    },
+    {
+      "name": "EventHandler",
+      "dependencies": {
+        "Shakuro.iOS_Toolbox/Extensions": [
+
+        ]
+      },
+      "source_files": "EventHandler/Source/**/*",
+      "frameworks": "Foundation"
+    },
+    {
+      "name": "Exceptions",
+      "source_files": "Exceptions/Source/**/*",
+      "frameworks": "Foundation"
+    },
+    {
+      "name": "Extensions",
+      "source_files": "Extensions/Source/**/*",
+      "frameworks": "UIKit",
+      "dependencies": {
+        "CommonCryptoModule": [
+          "1.0.2"
+        ]
+      }
+    },
+    {
+      "name": "GenericError",
+      "source_files": "GenericError/Source/**/*",
+      "frameworks": "Foundation"
+    },
+    {
+      "name": "HTTPClient",
+      "dependencies": {
+        "Shakuro.iOS_Toolbox/AsyncResult": [
+
+        ],
+        "Shakuro.iOS_Toolbox/GenericError": [
+
+        ],
+        "Alamofire": [
+          "5.1.0"
+        ]
+      },
+      "source_files": "HTTPClient/Source/**/*",
+      "frameworks": "Foundation"
+    },
+    {
+      "name": "ImageProcessing",
+      "source_files": "ImageProcessing/Source/**/*",
+      "frameworks": [
+        "CoreGraphics",
+        "Accelerate",
+        "AVFoundation",
+        "UIKit"
+      ]
+    },
+    {
+      "name": "HorizontalInfinityScrollView",
+      "dependencies": {
+        "Shakuro.iOS_Toolbox/Extensions": [
+
+        ],
+        "Shakuro.iOS_Toolbox/DecelerationHelper": [
+
+        ],
+        "pop": [
+          "1.0.12"
+        ]
+      },
+      "source_files": "HorizontalInfinityScrollView/Source/**/*",
+      "frameworks": "UIKit"
+    },
+    {
+      "name": "Keyboard",
+      "source_files": "Keyboard/Source/**/*",
+      "frameworks": "UIKit"
+    },
+    {
+      "name": "Keychain",
+      "source_files": "Keychain/Source/**/*",
+      "frameworks": "Foundation"
+    },
+    {
+      "name": "Labels",
+      "source_files": "Labels/Source/**/*",
+      "frameworks": "UIKit"
+    },
+    {
+      "name": "PlaceholderTextView",
+      "source_files": "PlaceholderTextView/Source/**/*",
+      "frameworks": "UIKit"
+    },
+    {
+      "name": "PoliteCoreData",
+      "source_files": "PoliteCoreData/Source/**/*",
+      "frameworks": [
+        "Foundation",
+        "CoreData"
+      ]
+    },
+    {
+      "name": "PullToRefresh",
+      "source_files": "PullToRefresh/Source/**/*",
+      "frameworks": "UIKit"
+    },
+    {
+      "name": "Router",
+      "dependencies": {
+        "Shakuro.iOS_Toolbox/AsyncResult": [
+
+        ],
+        "Shakuro.iOS_Toolbox/ContainerViewController": [
+
+        ],
+        "Shakuro.iOS_Toolbox/Extensions": [
+
+        ]
+      },
+      "source_files": "Router/Source/**/*",
+      "frameworks": "UIKit"
+    },
+    {
+      "name": "Settings",
+      "source_files": "Settings/Source/**/*",
+      "frameworks": "Foundation"
+    },
+    {
+      "name": "TaskManager",
+      "dependencies": {
+        "Shakuro.iOS_Toolbox/AsyncResult": [
+
+        ],
+        "Shakuro.iOS_Toolbox/Extensions": [
+
+        ]
+      },
+      "source_files": "TaskManager/Source/**/*",
+      "frameworks": "Foundation"
+    },
+    {
+      "name": "Utils",
+      "source_files": "Utils/Source/**/*",
+      "frameworks": "Foundation"
+    },
+    {
+      "name": "Vibrations",
+      "dependencies": {
+        "Shakuro.iOS_Toolbox/Device": [
+
+        ]
+      },
+      "source_files": "Vibrations/Source/**/*",
+      "frameworks": [
+        "AudioToolbox",
+        "Foundation",
+        "UIKit"
+      ]
+    },
+    {
+      "name": "VideoCamera",
+      "dependencies": {
+        "Shakuro.iOS_Toolbox/Device": [
+
+        ],
+        "Shakuro.iOS_Toolbox/ImageProcessing": [
+
+        ]
+      },
+      "source_files": "VideoCamera/Source/**/*",
+      "frameworks": [
+        "Accelerate",
+        "AVFoundation",
+        "UIKit"
+      ]
+    }
+  ],
+  "swift_version": "5.0"
+}
