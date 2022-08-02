@@ -8,15 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		020EF05700BB7882632638C5 /* Pods_MiFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F9434B4E3C3972724FBB431 /* Pods_MiFit.framework */; };
-		6B2AD57728941A6E001F28C1 /* UIViewController+Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2AD57428941A6E001F28C1 /* UIViewController+Child.swift */; };
-		6B2AD57828941A6E001F28C1 /* CGRect+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2AD57528941A6E001F28C1 /* CGRect+Helpers.swift */; };
-		6B2AD57928941A6E001F28C1 /* CALayer+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2AD57628941A6E001F28C1 /* CALayer+Helpers.swift */; };
-		6B2AD57F28941A88001F28C1 /* MiFitPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2AD57A28941A88001F28C1 /* MiFitPinView.swift */; };
-		6B2AD58028941A88001F28C1 /* MiFitContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2AD57B28941A88001F28C1 /* MiFitContainerView.swift */; };
-		6B2AD58128941A88001F28C1 /* MiFitActivityButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2AD57C28941A88001F28C1 /* MiFitActivityButton.swift */; };
-		6B2AD58228941A88001F28C1 /* MiFitActivityContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2AD57D28941A88001F28C1 /* MiFitActivityContainer.swift */; };
-		6B2AD58328941A88001F28C1 /* MiFitToogleOpenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2AD57E28941A88001F28C1 /* MiFitToogleOpenButton.swift */; };
-		6B2AD58528941AC5001F28C1 /* Bundle+BundleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2AD58428941AC5001F28C1 /* Bundle+BundleHelper.swift */; };
+		6B5DB2722899370F00A5236D /* MiFitActivityButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5DB26D2899370F00A5236D /* MiFitActivityButton.swift */; };
+		6B5DB2732899370F00A5236D /* MiFitActivityContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5DB26E2899370F00A5236D /* MiFitActivityContainer.swift */; };
+		6B5DB2742899370F00A5236D /* MiFitToogleOpenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5DB26F2899370F00A5236D /* MiFitToogleOpenButton.swift */; };
+		6B5DB2752899370F00A5236D /* MiFitContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5DB2702899370F00A5236D /* MiFitContainerView.swift */; };
+		6B5DB2762899370F00A5236D /* MiFitPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5DB2712899370F00A5236D /* MiFitPinView.swift */; };
+		6B5DB27C2899374D00A5236D /* CGRect+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5DB2782899374D00A5236D /* CGRect+Helpers.swift */; };
+		6B5DB27D2899374D00A5236D /* CALayer+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5DB2792899374D00A5236D /* CALayer+Helpers.swift */; };
+		6B5DB27F2899374D00A5236D /* Bundle+BundleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5DB27B2899374D00A5236D /* Bundle+BundleHelper.swift */; };
 		6BA52FE628630035009D6E34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA52FE528630035009D6E34 /* AppDelegate.swift */; };
 		6BA52FE828630035009D6E34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA52FE728630035009D6E34 /* SceneDelegate.swift */; };
 		6BA52FEF28630036009D6E34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BA52FEE28630036009D6E34 /* Assets.xcassets */; };
@@ -39,15 +38,14 @@
 
 /* Begin PBXFileReference section */
 		5F9434B4E3C3972724FBB431 /* Pods_MiFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiFit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B2AD57428941A6E001F28C1 /* UIViewController+Child.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+Child.swift"; path = "MiFitControl/Source/Extensions/UIViewController+Child.swift"; sourceTree = SOURCE_ROOT; };
-		6B2AD57528941A6E001F28C1 /* CGRect+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CGRect+Helpers.swift"; path = "MiFitControl/Source/Extensions/CGRect+Helpers.swift"; sourceTree = SOURCE_ROOT; };
-		6B2AD57628941A6E001F28C1 /* CALayer+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CALayer+Helpers.swift"; path = "MiFitControl/Source/Extensions/CALayer+Helpers.swift"; sourceTree = SOURCE_ROOT; };
-		6B2AD57A28941A88001F28C1 /* MiFitPinView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MiFitPinView.swift; path = MiFitControl/Source/Controls/MiFitPinView.swift; sourceTree = SOURCE_ROOT; };
-		6B2AD57B28941A88001F28C1 /* MiFitContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MiFitContainerView.swift; path = MiFitControl/Source/Controls/MiFitContainerView.swift; sourceTree = SOURCE_ROOT; };
-		6B2AD57C28941A88001F28C1 /* MiFitActivityButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MiFitActivityButton.swift; path = MiFitControl/Source/Controls/MiFitActivityButton.swift; sourceTree = SOURCE_ROOT; };
-		6B2AD57D28941A88001F28C1 /* MiFitActivityContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MiFitActivityContainer.swift; path = MiFitControl/Source/Controls/MiFitActivityContainer.swift; sourceTree = SOURCE_ROOT; };
-		6B2AD57E28941A88001F28C1 /* MiFitToogleOpenButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MiFitToogleOpenButton.swift; path = MiFitControl/Source/Controls/MiFitToogleOpenButton.swift; sourceTree = SOURCE_ROOT; };
-		6B2AD58428941AC5001F28C1 /* Bundle+BundleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Bundle+BundleHelper.swift"; path = "MiFitControl/Source/Extensions/Bundle+BundleHelper.swift"; sourceTree = SOURCE_ROOT; };
+		6B5DB26D2899370F00A5236D /* MiFitActivityButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiFitActivityButton.swift; sourceTree = "<group>"; };
+		6B5DB26E2899370F00A5236D /* MiFitActivityContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiFitActivityContainer.swift; sourceTree = "<group>"; };
+		6B5DB26F2899370F00A5236D /* MiFitToogleOpenButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiFitToogleOpenButton.swift; sourceTree = "<group>"; };
+		6B5DB2702899370F00A5236D /* MiFitContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiFitContainerView.swift; sourceTree = "<group>"; };
+		6B5DB2712899370F00A5236D /* MiFitPinView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiFitPinView.swift; sourceTree = "<group>"; };
+		6B5DB2782899374D00A5236D /* CGRect+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Helpers.swift"; sourceTree = "<group>"; };
+		6B5DB2792899374D00A5236D /* CALayer+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+Helpers.swift"; sourceTree = "<group>"; };
+		6B5DB27B2899374D00A5236D /* Bundle+BundleHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+BundleHelper.swift"; sourceTree = "<group>"; };
 		6BA52FE228630035009D6E34 /* MiFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BA52FE528630035009D6E34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BA52FE728630035009D6E34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +82,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B5DB26C289936F900A5236D /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				6B5DB26D2899370F00A5236D /* MiFitActivityButton.swift */,
+				6B5DB26E2899370F00A5236D /* MiFitActivityContainer.swift */,
+				6B5DB2702899370F00A5236D /* MiFitContainerView.swift */,
+				6B5DB2712899370F00A5236D /* MiFitPinView.swift */,
+				6B5DB26F2899370F00A5236D /* MiFitToogleOpenButton.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		6B5DB2772899372A00A5236D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6B5DB27B2899374D00A5236D /* Bundle+BundleHelper.swift */,
+				6B5DB2792899374D00A5236D /* CALayer+Helpers.swift */,
+				6B5DB2782899374D00A5236D /* CGRect+Helpers.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		6BA52FD928630035009D6E34 = {
 			isa = PBXGroup;
 			children = (
@@ -137,8 +157,8 @@
 			children = (
 				6BA5300F286302C9009D6E34 /* MiFitStylesheet.swift */,
 				6BA530242863038B009D6E34 /* Controllers */,
-				6BA530262863044B009D6E34 /* Controls */,
-				6BA53025286303F2009D6E34 /* Extensions */,
+				6B5DB26C289936F900A5236D /* Controls */,
+				6B5DB2772899372A00A5236D /* Extensions */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -184,31 +204,6 @@
 				6BA53010286302C9009D6E34 /* MiFitViewController.swift */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		6BA53025286303F2009D6E34 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				6B2AD58428941AC5001F28C1 /* Bundle+BundleHelper.swift */,
-				6B2AD57628941A6E001F28C1 /* CALayer+Helpers.swift */,
-				6B2AD57528941A6E001F28C1 /* CGRect+Helpers.swift */,
-				6B2AD57428941A6E001F28C1 /* UIViewController+Child.swift */,
-			);
-			name = Extensions;
-			path = Common/Extensions;
-			sourceTree = "<group>";
-		};
-		6BA530262863044B009D6E34 /* Controls */ = {
-			isa = PBXGroup;
-			children = (
-				6B2AD57C28941A88001F28C1 /* MiFitActivityButton.swift */,
-				6B2AD57D28941A88001F28C1 /* MiFitActivityContainer.swift */,
-				6B2AD57B28941A88001F28C1 /* MiFitContainerView.swift */,
-				6B2AD57A28941A88001F28C1 /* MiFitPinView.swift */,
-				6B2AD57E28941A88001F28C1 /* MiFitToogleOpenButton.swift */,
-			);
-			name = Controls;
-			path = Common/Controls;
 			sourceTree = "<group>";
 		};
 		6BA5302F2863477A009D6E34 /* Controls */ = {
@@ -361,20 +356,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B2AD58028941A88001F28C1 /* MiFitContainerView.swift in Sources */,
-				6B2AD57828941A6E001F28C1 /* CGRect+Helpers.swift in Sources */,
-				6B2AD58128941A88001F28C1 /* MiFitActivityButton.swift in Sources */,
-				6B2AD58228941A88001F28C1 /* MiFitActivityContainer.swift in Sources */,
 				6BA5301A286302C9009D6E34 /* MiFitViewController.swift in Sources */,
-				6B2AD58528941AC5001F28C1 /* Bundle+BundleHelper.swift in Sources */,
+				6B5DB2752899370F00A5236D /* MiFitContainerView.swift in Sources */,
+				6B5DB2732899370F00A5236D /* MiFitActivityContainer.swift in Sources */,
 				6BA52FE628630035009D6E34 /* AppDelegate.swift in Sources */,
-				6B2AD57F28941A88001F28C1 /* MiFitPinView.swift in Sources */,
 				6BA53019286302C9009D6E34 /* MiFitStylesheet.swift in Sources */,
-				6B2AD58328941A88001F28C1 /* MiFitToogleOpenButton.swift in Sources */,
-				6B2AD57928941A6E001F28C1 /* CALayer+Helpers.swift in Sources */,
 				6BA52FE828630035009D6E34 /* SceneDelegate.swift in Sources */,
+				6B5DB27F2899374D00A5236D /* Bundle+BundleHelper.swift in Sources */,
 				6BA5301C286302C9009D6E34 /* MiFitMapViewController.swift in Sources */,
-				6B2AD57728941A6E001F28C1 /* UIViewController+Child.swift in Sources */,
+				6B5DB2722899370F00A5236D /* MiFitActivityButton.swift in Sources */,
+				6B5DB2762899370F00A5236D /* MiFitPinView.swift in Sources */,
+				6B5DB27C2899374D00A5236D /* CGRect+Helpers.swift in Sources */,
+				6B5DB2742899370F00A5236D /* MiFitToogleOpenButton.swift in Sources */,
+				6B5DB27D2899374D00A5236D /* CALayer+Helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

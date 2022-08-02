@@ -1,4 +1,5 @@
 import UIKit
+import Shakuro_iOS_Toolbox
 
 class WeakTarget: NSObject {
     weak var controller: MiFitViewController?
