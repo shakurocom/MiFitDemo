@@ -1,5 +1,4 @@
 import UIKit
-import Shakuro_iOS_Toolbox
 
 class WeakTarget: NSObject {
     weak var controller: MiFitViewController?
@@ -17,7 +16,7 @@ public class MiFitViewController: UIViewController {
         static let topScreenTopOffset: CGFloat = UIScreen.main.bounds.height < prefferedScreenHeight ? -117.0 : -56.0
     }
 
-    static func loadFromNib() -> MiFitViewController {
+    public static func loadFromNib() -> MiFitViewController {
         return Bundle.miFitBundleHelper.instantiateViewController(targetClass: MiFitViewController.self, nibName: "MiFitViewController")
     }
 
