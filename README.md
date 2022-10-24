@@ -44,7 +44,7 @@ If you prefer not to use CocoaPods, you can integrate Shakuro.MiFit simply by co
 
 ## License
 
-Shakuro.MovieList is released under the MIT license. [See LICENSE](https://github.com/shakurocom/ScrollableTabs/blob/master/LICENSE.md) for details.
+Shakuro.MiFit is released under the MIT license. [See LICENSE](https://github.com/shakurocom/ScrollableTabs/blob/master/LICENSE.md) for details.
 
 ## Give it a try and reach us
 
