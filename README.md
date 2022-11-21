@@ -10,6 +10,8 @@ MiFit is a Swift component for a fitness app. It allows the user to switch betwe
 - [Installation](#installation)
 - [License](#license)
 
+![](Resources/transition-navigation.gif)
+
 Here is an example of the animation for a MiFit-like app:
 
 ![](Resources/extendedScreen.gif)
